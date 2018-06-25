@@ -40,9 +40,9 @@ public class UsersDAO {
     }
     
     public static void main(String[] args) {
-        UsersDAO ud = new UsersDAO();
-        Users u = ud.login("nhtoan", "123456");
-        System.out.println(u.getPhoneNumber());
+//        UsersDAO ud = new UsersDAO();
+//        Users u = ud.login("nhtoan", "123456");
+//        System.out.println(u.getPhoneNumber());
         
     }
 }

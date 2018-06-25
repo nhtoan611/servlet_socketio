@@ -11,10 +11,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Header</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu a").click(function(){
+                    $(".menu a").removeClass("selected");
+                    $(this).addClass("selected");
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="header">
-            <div class="title"><a href="/ParkingSystem">Parking System </a></div>
+            <div class="title"><a href="/ParkingSystem/index.jsp">Parking System </a></div>
             <%
                 Users users = (Users) session.getAttribute("users");
                 if (users == null) {
@@ -26,14 +38,12 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#" class="selected">Main page</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Add a category</a></li>
-                    <li><a href="#">Edit categories</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Options</a></li>
-                    <li><a href="#">Admin settings</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="/ParkingSystem/index.jsp" >Danh sách xe vào</a></li>
+                    <li><a href="/ParkingSystem/outcar.jsp">Danh sách xe ra</a></li>
+                    <li><a href="/ParkingSystem/price.jsp">Quản lí biểu phí</a></li>
+                    <li><a href="/ParkingSystem/statistic.jsp">Báo cáo thống kê</a></li>
+                    <li><a href="/ParkingSystem/follow.jsp">Danh sách xe theo dõi</a></li>
+                    <li><a href="/ParkingSystem/monthlycars.jsp">Xe gửi theo tháng</a></li>
                 </ul>
             </div>
 

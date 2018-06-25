@@ -17,6 +17,7 @@ import com.corundumstudio.socketio.SocketIOClient;
 import com.corundumstudio.socketio.SocketIOServer;
 import com.corundumstudio.socketio.VoidAckCallback;
 import com.corundumstudio.socketio.listener.DataListener;
+import model.Tests;
 
 import socket.WebSocket;
 
@@ -37,16 +38,10 @@ public class TestServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         WebSocket socket = WebSocket.getInstance();
-        String  hello = request.getParameter("hello");
-        System.out.println(hello);
+        String  hello = request.getParameter("numberPlate");    
+//        System.out.println(hello);
         socket.sendEvent(hello);
         
-//        request.setAttribute("hello", hello);
-//        request.setAttribute("goodbye", "Goodbye");
-//        RequestDispatcher rd = getServletContext().getRequestDispatcher("/test.jsp");
-//        rd.forward(request, response);
-        
- 
     }
 
 
@@ -59,4 +54,3 @@ public class TestServlet extends HttpServlet {
 
 
 }
-//phai gui request tu c++ da

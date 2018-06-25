@@ -16,6 +16,7 @@ import com.corundumstudio.socketio.SocketIOClient;
 import com.corundumstudio.socketio.SocketIOServer;
 import com.corundumstudio.socketio.VoidAckCallback;
 import com.corundumstudio.socketio.listener.DataListener;
+import model.Tests;
 public class WebSocket {
     private static final WebSocket sharedInstance = new WebSocket();
     

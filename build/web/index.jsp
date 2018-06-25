@@ -17,23 +17,24 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript">
-        var $ = jQuery.noConflict();
-        $(function() {
-        $('#tabsmenu').tabify();
-        $(".toggle_container").hide(); 
-        $(".trigger").click(function(){
-                $(this).toggleClass("active").next().slideToggle("slow");
-                return false;
-        });
-        });
+            var $ = jQuery.noConflict();
+            $(function () {
+                $('#tabsmenu').tabify();
+                $(".toggle_container").hide();
+                $(".trigger").click(function () {
+                    $(this).toggleClass("active").next().slideToggle("slow");
+                    return false;
+                });
+            });
         </script>
+
     </head>
     <body>
         <div id="panelwrap">
-           <jsp:include page="header.jsp"></jsp:include>
-           <jsp:include page="content.jsp"></jsp:include>
-           <jsp:include page="footer.jsp"></jsp:include>
+            <jsp:include page="header.jsp"></jsp:include>
+            <jsp:include page="incar.jsp"></jsp:include>
+            <jsp:include page="footer.jsp"></jsp:include>
         </div>
-        
+
     </body>
 </html>

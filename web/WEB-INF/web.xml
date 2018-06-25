@@ -8,6 +8,26 @@
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>controller.TestServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CarsServlet</servlet-name>
+        <servlet-class>controller.CarsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CostsServlet</servlet-name>
+        <servlet-class>controller.CostsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FollowServlet</servlet-name>
+        <servlet-class>controller.FollowServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MonthlyCarsServlet</servlet-name>
+        <servlet-class>controller.MonthlyCarsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChartServlet</servlet-name>
+        <servlet-class>controller.ChartServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>UsersServlet</servlet-name>
         <url-pattern>/UsersServlet</url-pattern>
@@ -15,6 +35,22 @@
     <servlet-mapping>
         <servlet-name>TestServlet</servlet-name>
         <url-pattern>/TestServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarsServlet</servlet-name>
+        <url-pattern>/CarsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CostsServlet</servlet-name>
+        <url-pattern>/CostsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FollowServlet</servlet-name>
+        <url-pattern>/FollowServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MonthlyCarsServlet</servlet-name>
+        <url-pattern>/MonthlyCarsServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
